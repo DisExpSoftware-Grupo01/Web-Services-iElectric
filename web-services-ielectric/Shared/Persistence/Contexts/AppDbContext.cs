@@ -8,7 +8,6 @@ using web_services_ielectric.Appointments.Domain.Models;
 using web_services_ielectric.Clients.Domain.Models;
 using web_services_ielectric.Plans.Domain.Models;
 using web_services_ielectric.Reports.Domain.Models;
-using web_services_ielectric.Security.Domain.Entities;
 using web_services_ielectric.Shared.Domain.Models;
 using web_services_ielectric.Shared.Extensions;
 using web_services_ielectric.SpareRequests.Domain.Models;
@@ -33,18 +32,13 @@ public class AppDbContext : DbContext
     public DbSet<ApplianceBrand> ApplianceBrands { get; set; }
     public DbSet<Appliance> Appliances { get; set; }
     public DbSet<Plan> Plans { get; set; }
-    public DbSet<User> Users { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
 
         // START USER //
-
-        builder.Entity<User>().ToTable("Users");
-        builder.Entity<User>().HasKey(p => p.Id);
-        builder.Entity<User>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
-        builder.Entity<User>().Property(p => p.Email).IsRequired();
+        
 
         // FINISH USER //
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PROYECTOS JETBRAINS\\Rider Projects\\web-services-ielectric\\web-services-ielectric\\web-services-ielectric.csproj": {}
+    "D:\\PROYECTOS JETBRAINS\\LANDING PAGE ICONIC\\Web-Services-iElectric\\web-services-ielectric\\web-services-ielectric.csproj": {}
   },
   "projects": {
-    "D:\\PROYECTOS JETBRAINS\\Rider Projects\\web-services-ielectric\\web-services-ielectric\\web-services-ielectric.csproj": {
+    "D:\\PROYECTOS JETBRAINS\\LANDING PAGE ICONIC\\Web-Services-iElectric\\web-services-ielectric\\web-services-ielectric.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PROYECTOS JETBRAINS\\Rider Projects\\web-services-ielectric\\web-services-ielectric\\web-services-ielectric.csproj",
+        "projectUniqueName": "D:\\PROYECTOS JETBRAINS\\LANDING PAGE ICONIC\\Web-Services-iElectric\\web-services-ielectric\\web-services-ielectric.csproj",
         "projectName": "web-services-ielectric",
-        "projectPath": "D:\\PROYECTOS JETBRAINS\\Rider Projects\\web-services-ielectric\\web-services-ielectric\\web-services-ielectric.csproj",
+        "projectPath": "D:\\PROYECTOS JETBRAINS\\LANDING PAGE ICONIC\\Web-Services-iElectric\\web-services-ielectric\\web-services-ielectric.csproj",
         "packagesPath": "C:\\Users\\JULIO.LAPTOP-KE144AIM\\.nuget\\packages\\",
-        "outputPath": "D:\\PROYECTOS JETBRAINS\\Rider Projects\\web-services-ielectric\\web-services-ielectric\\obj\\",
+        "outputPath": "D:\\PROYECTOS JETBRAINS\\LANDING PAGE ICONIC\\Web-Services-iElectric\\web-services-ielectric\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JULIO.LAPTOP-KE144AIM\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -74,13 +74,13 @@
               "target": "Package",
               "version": "[2.0.0-preview1-final, )"
             },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[2.2.7, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

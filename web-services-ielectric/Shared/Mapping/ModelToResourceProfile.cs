@@ -17,8 +17,6 @@ using web_services_ielectric.Plans.Domain.Models;
 using web_services_ielectric.Plans.Resources;
 using web_services_ielectric.Reports.Domain.Models;
 using web_services_ielectric.Reports.Resources;
-using web_services_ielectric.Security.Domain.Entities;
-using web_services_ielectric.Security.Domain.Services.Communication;
 using web_services_ielectric.Shared.Domain.Models;
 using web_services_ielectric.Shared.Extensions;
 using web_services_ielectric.Shared.Resources;
@@ -47,8 +45,5 @@ public class ModelToResourceProfile : Profile
         CreateMap<Report, ReportResource>();
         CreateMap<SpareRequest, SpareRequestResource>();
         CreateMap<Plan, PlanResource>();
-        CreateMap<User, RegisterRequest>();
-        CreateMap<User, AuthenticateResponse>();
-        CreateMap<User, RegisterResponse>();
     }
 }
