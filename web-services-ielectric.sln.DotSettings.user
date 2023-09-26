@@ -4,13 +4,11 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=18df2eca_002Dee5f_002D44b0_002D99d3_002D78c504a17c52/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2002e6a7_002D6cfb_002D430c_002Da2a6_002D294008f137be/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UpdateUserPlanAsync_ValidUpdate_ReturnsSuccessResponse #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2002e6a7_002D6cfb_002D430c_002Da2a6_002D294008f137be/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UpdateUserPlanAsync_ValidUpdate_ReturnsSuccessResponse #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fa7c27be_002Dbfbb_002D4a06_002Db9ee_002D1577946dd428/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UpdateUserPlanAsync_ValidUpdate_ReturnsSuccessResponse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.PlanServiceTest.SaveAsync_SpareRequestsWithSameDetailsButDifferentDates_ReturnsSuccess&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fa7c27be_002Dbfbb_002D4a06_002Db9ee_002D1577946dd428/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UpdateUserPlanAsync_ValidUpdate_ReturnsSuccessResponse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFolder&gt;DF3FCBE3-331A-42E6-8C18-E807062DAC9C/d:Tests&lt;/ProjectFolder&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>
