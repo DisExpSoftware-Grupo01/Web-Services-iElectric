@@ -24,6 +24,7 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.0-preview.3.23174.2" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design" Version="2.0.0-preview1-final" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+        <PackageReference Include="Moq" Version="4.17.1" />
         <PackageReference Include="MySql.EntityFrameworkCore" Version="7.0.2" />
         <PackageReference Include="MySqlConnector" Version="2.2.7" />
         <PackageReference Include="SpecFlow" Version="3.9.22" />
@@ -39,7 +40,6 @@
 
     <ItemGroup>
       <Folder Include="Tests\IntegrationTests\" />
-      <Folder Include="Tests\UnitTests\" />
     </ItemGroup>
 
 </Project>
