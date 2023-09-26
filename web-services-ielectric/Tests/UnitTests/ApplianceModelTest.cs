@@ -15,14 +15,13 @@ public class ApplianceModelTest
     [Fact]
     public async Task SaveAsync_ValidBrand_ShouldReturnSuccessResponse()
     {
-        // Arrange
         var mockBrandRepository = new Mock<IApplianceBrandRepository>();
         mockBrandRepository.Setup(repo => repo.AddAsync(It.IsAny<ApplianceBrand>()))
-            .Returns(Task.CompletedTask); // Simular que la operación de guardar tiene éxito
+            .Returns(Task.CompletedTask);
 
         var mockUnitOfWork = new Mock<IUnitOfWork>();
         mockUnitOfWork.Setup(uow => uow.CompleteAsync())
-            .Returns(Task.CompletedTask); // Simular que la operación de unidad de trabajo tiene éxito
+            .Returns(Task.CompletedTask); 
 
         var applianceBrandService = new ApplianceBrandService(
             mockBrandRepository.Object,
@@ -51,12 +50,9 @@ public class ApplianceModelTest
                 }
             }
         };
-
-
-        // Act
+        
         var response = await applianceBrandService.SaveAsync(brandToSave);
-
-        // Assert
+        
         Assert.True(response.Success);
         Assert.Null(response.Message);
     }
