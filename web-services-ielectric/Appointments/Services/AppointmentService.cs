@@ -56,12 +56,21 @@ public class AppointmentService : IAppointmentService
     {
         try
         {
+            // Verificar si ya existe un Appointment con los mismos valores
+            var existingAppointment = await _appointmentRepository.FindByDateTechnicianAndClientAsync(
+                appointment.DateReserve, appointment.TechnicianId, appointment.ClientId);
+
+            if (existingAppointment != null)
+            {
+                return new AppointmentResponse("An Appointment with the same date, TechnicianId, and ClientId already exists.");
+            }
+
             await _appointmentRepository.AddAsync(appointment);
             await _unitOfWork.CompleteAsync();
 
             return new AppointmentResponse(appointment);
         }
-        catch(Exception e)
+        catch (Exception e)
         {
             return new AppointmentResponse($"An error occurred while saving the appointment: {e.Message}");
         }

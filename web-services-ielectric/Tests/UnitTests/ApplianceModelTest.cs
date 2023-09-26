@@ -6,6 +6,9 @@ using web_services_ielectric.ApplianceBrands.Domain.Models;
 using web_services_ielectric.ApplianceBrands.Domain.Repositories;
 using web_services_ielectric.ApplianceBrands.Services;
 using web_services_ielectric.ApplianceModels.Domain.Models;
+using web_services_ielectric.Appointments.Domain.Models;
+using web_services_ielectric.Appointments.Domain.Repositories;
+using web_services_ielectric.Appointments.Services;
 using web_services_ielectric.Shared.Domain.Repositories;
 using Xunit;
 namespace web_services_ielectric.Tests.UnitTests;
@@ -51,9 +54,49 @@ public class ApplianceModelTest
             }
         };
         
+        
+        
         var response = await applianceBrandService.SaveAsync(brandToSave);
         
         Assert.True(response.Success);
         Assert.Null(response.Message);
+    }
+    
+    [Fact]
+    public async Task SaveAsync_DuplicateAppointment_ReturnsErrorResponse()
+    {
+        var dateReserve = "2023-09-25";
+        long technicianId = 1;
+        long clientId = 2;
+
+        var mockAppointmentRepository = new Mock<IAppointmentRepository>();
+        var mockUnitOfWork = new Mock<IUnitOfWork>();
+
+        var existingAppointment = new Appointment
+        {
+            DateReserve = dateReserve,
+            TechnicianId = technicianId,
+            ClientId = clientId
+        };
+
+        mockAppointmentRepository.Setup(r =>
+                r.FindByDateTechnicianAndClientAsync(dateReserve, technicianId, clientId))
+            .ReturnsAsync(existingAppointment);
+
+        var appointmentService = new AppointmentService(mockAppointmentRepository.Object, mockUnitOfWork.Object);
+
+        // Act
+        var appointmentToSave = new Appointment
+        {
+            DateReserve = dateReserve,
+            TechnicianId = technicianId,
+            ClientId = clientId
+        };
+
+        var result = await appointmentService.SaveAsync(appointmentToSave);
+
+        // Assert
+        Assert.False(result.Success);
+        Assert.Equal("An Appointment with the same date, TechnicianId, and ClientId already exists.", result.Message);
     }
 }

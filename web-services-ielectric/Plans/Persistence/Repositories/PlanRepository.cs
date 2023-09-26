@@ -17,7 +17,7 @@ public class PlanRepository : BaseRepository, IPlanRepository
         await _context.Plans.AddAsync(plan);
     }
 
-    public async Task<Plan> FindById(long planId)
+    public async Task<Plan> FindByIdAsync(long planId)
     {
         return await _context.Plans.FindAsync(planId);
     }

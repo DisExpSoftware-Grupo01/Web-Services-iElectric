@@ -30,6 +30,15 @@ public class AppointmentRepository : BaseRepository, IAppointmentRepository
         _context.Appointments.Remove(appointment);
     }
 
+    public async Task<Appointment> FindByDateTechnicianAndClientAsync(string DateReserve, long technicianId, long clientId)
+    {
+        return await _context.Appointments
+            .FirstOrDefaultAsync(a =>
+                a.DateReserve == DateReserve &&
+                a.TechnicianId == technicianId &&
+                a.ClientId == clientId);
+    }
+
     public void Update(Appointment appointment)
     {
         _context.Appointments.Update(appointment);

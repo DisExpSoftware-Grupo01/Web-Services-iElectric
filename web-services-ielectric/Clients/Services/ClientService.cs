@@ -108,7 +108,7 @@ public class ClientService : IClientService
 
     public async Task<ClientResponse> UpdateUserPlanAsync(long clientId, long planId)
     {
-        var existingPlan = await _planRepository.FindById(planId);
+        var existingPlan = await _planRepository.FindByIdAsync(planId);
 
         if (existingPlan == null && planId != 0)
             return new ClientResponse("Plan not found");

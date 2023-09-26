@@ -9,4 +9,5 @@ public interface IAppointmentRepository
     Task<Appointment> FindByIdAsync(long id);
     void Update(Appointment appointment);
     void Remove(Appointment appointment);
+    Task<Appointment> FindByDateTechnicianAndClientAsync(string DateReserve, long technicianId, long clientId);
 }

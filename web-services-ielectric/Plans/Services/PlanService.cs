@@ -19,7 +19,7 @@ public class PlanService : IPlanService
 
     public async Task<PlanResponse> DeleteAsync(long id)
     {
-        var existingPlan = await _planRepository.FindById(id);
+        var existingPlan = await _planRepository.FindByIdAsync(id);
         if (existingPlan == null)
         {
             return new PlanResponse("Plan not found");
@@ -39,7 +39,7 @@ public class PlanService : IPlanService
 
     public async Task<PlanResponse> GetByIdAsync(long id)
     {
-        var existingPlan = await _planRepository.FindById(id);
+        var existingPlan = await _planRepository.FindByIdAsync(id);
         if (existingPlan == null)
         {
             return new PlanResponse("Plan not found");
@@ -69,7 +69,7 @@ public class PlanService : IPlanService
 
     public async Task<PlanResponse> UpdateAsync(long id, Plan plan)
     {
-        var existingPlan = await _planRepository.FindById(id);
+        var existingPlan = await _planRepository.FindByIdAsync(id);
         if (existingPlan == null)
         {
             return new PlanResponse("Plan not found");

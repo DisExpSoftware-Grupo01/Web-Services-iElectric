@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Cn/9qX+w5KH65kAR7Jq8fXBFeamosz2F2qDvS/YIhuCtG7OYuM0xTDgs1aktis11f2NQr401AxwFbzCqBJ7r5w==",
+  "dgSpecHash": "+UlYYztpLhjWd7cqARyMg5thxwGqUpEqVkhl+yIrCu1bV8TzL7tS+zQSLN/VwCNcdiMn3Ak0YQqBI3nV9ncR2Q==",
   "success": true,
-  "projectFilePath": "D:\\PROYECTOS JETBRAINS\\REPOSITORIO EXPERIMENTOS\\PRIMER INTENTO\\Web-Services-iElectric\\web-services-ielectric\\web-services-ielectric.csproj",
+  "projectFilePath": "D:\\PROYECTOS JETBRAINS\\REPOSITORIO EXPERIMENTOS\\TERCER INTENTO\\Web-Services-iElectric\\web-services-ielectric\\web-services-ielectric.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JULIO.LAPTOP-KE144AIM\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\JULIO.LAPTOP-KE144AIM\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
