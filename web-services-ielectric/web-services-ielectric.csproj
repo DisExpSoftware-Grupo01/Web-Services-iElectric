@@ -38,9 +38,7 @@
 
 
     <ItemGroup>
-      <Folder Include="Tests\Features\" />
       <Folder Include="Tests\IntegrationTests\" />
-      <Folder Include="Tests\Steps\" />
       <Folder Include="Tests\UnitTests\" />
     </ItemGroup>
 
