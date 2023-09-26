@@ -6,7 +6,6 @@ namespace web_services_ielectric.Shared.Persistence.Repositories;
 public class UnitOfWork : IUnitOfWork
 {
     private readonly AppDbContext _context;
-
     public UnitOfWork(AppDbContext context)
     {
         _context = context;
@@ -15,5 +14,10 @@ public class UnitOfWork : IUnitOfWork
     public async Task CompleteAsync()
     {
         await _context.SaveChangesAsync();
+    }
+
+    public async Task<int> CompletedAsync()
+    {
+        return await _context.SaveChangesAsync();
     }
 }

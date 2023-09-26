@@ -21,31 +21,24 @@ public class ApplianceModelAppointmentTest
         var mockBrandRepository = new Mock<IApplianceBrandRepository>();
         mockBrandRepository.Setup(repo => repo.AddAsync(It.IsAny<ApplianceBrand>()))
             .Returns(Task.CompletedTask);
-
         var mockUnitOfWork = new Mock<IUnitOfWork>();
         mockUnitOfWork.Setup(uow => uow.CompleteAsync())
             .Returns(Task.CompletedTask); 
-
         var applianceBrandService = new ApplianceBrandService(
             mockBrandRepository.Object,
             mockUnitOfWork.Object
         );
-
-        var brandToSave = new ApplianceBrand
-        {
+        var brandToSave = new ApplianceBrand {
             Name = "Marca Ejemplo",
             ImgPath = "/images/marca-ejemplo.png",
-            ApplianceModels = new List<ApplianceModel>
-            {
-                new ApplianceModel
-                {
+            ApplianceModels = new List<ApplianceModel> {
+                new ApplianceModel {
                     Name = "Modelo 1",
                     Model = "12345",
                     ImgPath = "/images/modelo-1.png",
                     ApplianceBrandId = 1
                 },
-                new ApplianceModel
-                {
+                new ApplianceModel {
                     Name = "Modelo 2",
                     Model = "67890",
                     ImgPath = "/images/modelo-2.png",
@@ -53,11 +46,7 @@ public class ApplianceModelAppointmentTest
                 }
             }
         };
-        
-        
-        
         var response = await applianceBrandService.SaveAsync(brandToSave);
-        
         Assert.True(response.Success);
         Assert.Null(response.Message);
     }
@@ -84,8 +73,7 @@ public class ApplianceModelAppointmentTest
             .ReturnsAsync(existingAppointment);
 
         var appointmentService = new AppointmentService(mockAppointmentRepository.Object, mockUnitOfWork.Object);
-
-        // Act
+        
         var appointmentToSave = new Appointment
         {
             DateReserve = dateReserve,
@@ -94,8 +82,7 @@ public class ApplianceModelAppointmentTest
         };
 
         var result = await appointmentService.SaveAsync(appointmentToSave);
-
-        // Assert
+        
         Assert.False(result.Success);
         Assert.Equal("An Appointment with the same date, TechnicianId, and ClientId already exists.", result.Message);
     }

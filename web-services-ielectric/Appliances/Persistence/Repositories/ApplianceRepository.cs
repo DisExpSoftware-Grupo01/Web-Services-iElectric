@@ -9,7 +9,6 @@ namespace web_services_ielectric.Appliances.Persistence.Repositories;
 public class ApplianceRepository : BaseRepository, IApplianceRepository
 {
     public ApplianceRepository(AppDbContext context) : base(context) { }
-
     public async Task AddAsync(Appliance appliance)
     {
         await _context.Appliances.AddAsync(appliance);

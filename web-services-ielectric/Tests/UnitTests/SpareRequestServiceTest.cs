@@ -9,12 +9,10 @@ using web_services_ielectric.Technicians.Domain.Models;
 
 namespace web_services_ielectric.Tests.UnitTests;
 
-public class PlanServiceTest
+public class SpareRequestServiceTest
 {
     [Fact]
-    public async Task SaveAsync_SpareRequestsWithSameDetailsButDifferentDates_ReturnsSuccess()
-    {
-        // Arrange
+    public async Task SaveAsync_SpareRequestsWithSameDetailsButDifferentDates_ReturnsSuccess() {
         var unitOfWorkMock = new Mock<IUnitOfWork>();
         var repositoryMock = new Mock<ISpareRequestRepository>();
 
@@ -26,27 +24,23 @@ public class PlanServiceTest
                 Technician = new Technician { Id = 1 },
                 AppointmentId = 1,
                 Appointment = new Appointment { Id = 1 },
-                Date = "2023-09-25" // Date in a different format than the new request
+                Date = "2023-09-25"
             }
         };
 
         repositoryMock.Setup(r => r.ListAsync()).ReturnsAsync(existingSpareRequests);
-
         var spareRequestService = new SpareRequestService(repositoryMock.Object, unitOfWorkMock.Object);
-
         var newSpareRequest = new SpareRequest
         {
             TechnicianId = 1,
             Technician = new Technician { Id = 1 },
-            AppointmentId = 1,
+            AppointmentId = 2,
             Appointment = new Appointment { Id = 1 },
-            Date = "2023-09-26" // Different date than the existing one
+            Date = "2023-09-26"
         };
 
-        // Act
         var result = await spareRequestService.SaveAsync(newSpareRequest);
 
-        // Assert
         unitOfWorkMock.Verify(u => u.CompleteAsync(), Times.Once);
         Assert.True(result.Success);
         Assert.Null(result.Message);
