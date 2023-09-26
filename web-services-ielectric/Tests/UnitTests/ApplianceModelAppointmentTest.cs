@@ -13,7 +13,7 @@ using web_services_ielectric.Shared.Domain.Repositories;
 using Xunit;
 namespace web_services_ielectric.Tests.UnitTests;
 
-public class ApplianceModelTest
+public class ApplianceModelAppointmentTest
 {
     [Fact]
     public async Task SaveAsync_ValidBrand_ShouldReturnSuccessResponse()

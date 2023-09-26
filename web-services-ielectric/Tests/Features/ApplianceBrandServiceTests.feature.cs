@@ -19,7 +19,7 @@ namespace web_services_ielectric.Tests.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class PlanServiceTestsFeature : object, Xunit.IClassFixture<PlanServiceTestsFeature.FixtureData>, System.IDisposable
+    public partial class ApplianceBrandServiceTestsFeature : object, Xunit.IClassFixture<ApplianceBrandServiceTestsFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -28,10 +28,10 @@ namespace web_services_ielectric.Tests.Features
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "PlanServiceTests.feature"
+#line 1 "ApplianceBrandServiceTests.feature"
 #line hidden
         
-        public PlanServiceTestsFeature(PlanServiceTestsFeature.FixtureData fixtureData, web_services_ielectric_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public ApplianceBrandServiceTestsFeature(ApplianceBrandServiceTestsFeature.FixtureData fixtureData, web_services_ielectric_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -40,8 +40,8 @@ namespace web_services_ielectric.Tests.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Tests/Features", "PlanServiceTests", "As a Developer\r\nI Want ot add new Plan through API\r\nSo that it becomes available " +
-                    "for applications.", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Tests/Features", "ApplianceBrandServiceTests", "As a Developer \r\nI want to add new ApplianceBrand through API\r\nSo that it becomes" +
+                    " avaliable for applications.", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -81,18 +81,18 @@ namespace web_services_ielectric.Tests.Features
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Add Plan")]
-        [Xunit.TraitAttribute("FeatureTitle", "PlanServiceTests")]
-        [Xunit.TraitAttribute("Description", "Add Plan")]
-        [Xunit.TraitAttribute("Category", "mytag")]
-        public virtual void AddPlan()
+        [Xunit.SkippableFactAttribute(DisplayName="Add ApplianceBrand")]
+        [Xunit.TraitAttribute("FeatureTitle", "ApplianceBrandServiceTests")]
+        [Xunit.TraitAttribute("Description", "Add ApplianceBrand")]
+        [Xunit.TraitAttribute("Category", "applianceBrand-adding")]
+        public virtual void AddApplianceBrand()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
+                    "applianceBrand-adding"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add Plan", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add ApplianceBrand", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 7
-this.ScenarioInitialize(scenarioInfo);
+ this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -112,19 +112,19 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 8
- testRunner.Given("The Endpoint https://localhost:44346/api/v1/plans is available", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("The Endpoint https://localhost:44346/api/v1/applianceBrand is available", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                             "Name",
-                            "Price"});
-                table2.AddRow(new string[] {
-                            "New Plan",
-                            "20"});
+                            "ImgPath"});
+                table1.AddRow(new string[] {
+                            "Samsung",
+                            "img1"});
 #line 9
- testRunner.When("A Plan Request is sent", ((string)(null)), table2, "When ");
+  testRunner.When("A ApplianceBrand Request is sent", ((string)(null)), table1, "When ");
 #line hidden
 #line 12
- testRunner.Then("A Response with Status 200 is received for the plan", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+  testRunner.Then("A Response with Status 200 is received for the applianceBrand", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -137,12 +137,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             public FixtureData()
             {
-                PlanServiceTestsFeature.FeatureSetup();
+                ApplianceBrandServiceTestsFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                PlanServiceTestsFeature.FeatureTearDown();
+                ApplianceBrandServiceTestsFeature.FeatureTearDown();
             }
         }
     }
