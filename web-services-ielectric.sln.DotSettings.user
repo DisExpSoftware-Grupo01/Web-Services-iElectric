@@ -1,2 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=DF3FCBE3_002D331A_002D42E6_002D8C18_002DE807062DAC9C_002Fd_003AShared_002Fd_003ADomain_002Fd_003AModels_002Ff_003APerson_002Ecs/@EntryIndexedValue">ForceIncluded</s:String></wpf:ResourceDictionary>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=DF3FCBE3_002D331A_002D42E6_002D8C18_002DE807062DAC9C_002Fd_003AShared_002Fd_003ADomain_002Fd_003AModels_002Ff_003APerson_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=15ad5626_002D855b_002D463e_002Da8ad_002D607dc32654dc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SaveAsync_ValidBrand_ShouldReturnSuccessResponse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.ApplianceModelTest.SaveAsync_ValidBrand_ShouldReturnSuccessResponse&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

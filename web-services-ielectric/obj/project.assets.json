@@ -10066,11 +10066,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PROYECTOS JETBRAINS\\LANDING PAGE ICONIC\\Web-Services-iElectric\\web-services-ielectric\\web-services-ielectric.csproj",
+      "projectUniqueName": "D:\\PROYECTOS JETBRAINS\\REPOSITORIO EXPERIMENTOS\\PRIMER INTENTO\\Web-Services-iElectric\\web-services-ielectric\\web-services-ielectric.csproj",
       "projectName": "web-services-ielectric",
-      "projectPath": "D:\\PROYECTOS JETBRAINS\\LANDING PAGE ICONIC\\Web-Services-iElectric\\web-services-ielectric\\web-services-ielectric.csproj",
+      "projectPath": "D:\\PROYECTOS JETBRAINS\\REPOSITORIO EXPERIMENTOS\\PRIMER INTENTO\\Web-Services-iElectric\\web-services-ielectric\\web-services-ielectric.csproj",
       "packagesPath": "C:\\Users\\JULIO.LAPTOP-KE144AIM\\.nuget\\packages\\",
-      "outputPath": "D:\\PROYECTOS JETBRAINS\\LANDING PAGE ICONIC\\Web-Services-iElectric\\web-services-ielectric\\obj\\",
+      "outputPath": "D:\\PROYECTOS JETBRAINS\\REPOSITORIO EXPERIMENTOS\\PRIMER INTENTO\\Web-Services-iElectric\\web-services-ielectric\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JULIO.LAPTOP-KE144AIM\\AppData\\Roaming\\NuGet\\NuGet.Config"
