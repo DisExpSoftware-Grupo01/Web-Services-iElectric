@@ -114,14 +114,14 @@ namespace web_services_ielectric.Tests.Features
 #line 8
   testRunner.Given("The Endpoint https://localhost:44346/api/v1/applianceBrand is available", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "Name",
                             "ImgPath"});
-                table1.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Samsung",
                             "img1"});
 #line 9
-  testRunner.When("A ApplianceBrand Request is sent", ((string)(null)), table1, "When ");
+  testRunner.When("A ApplianceBrand Request is sent", ((string)(null)), table2, "When ");
 #line hidden
 #line 12
   testRunner.Then("A Response with Status 200 is received for the applianceBrand", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
