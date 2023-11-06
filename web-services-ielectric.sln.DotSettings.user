@@ -2,6 +2,7 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=DF3FCBE3_002D331A_002D42E6_002D8C18_002DE807062DAC9C_002Fd_003AShared_002Fd_003ADomain_002Fd_003AModels_002Ff_003APerson_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\JULIO.LAPTOP-KE144AIM\AppData\Local\JetBrains\Rider2023.2\resharper-host\temp\Rider\vAny\CoverageData\_web-services-ielectric.1721096750\Snapshot\snapshot.utdcvr</s:String>
 	
+	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=18df2eca_002Dee5f_002D44b0_002D99d3_002D78c504a17c52/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
@@ -13,14 +14,8 @@
     &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.AdministratorTests.GetByUserIdAsync_ExistingAdministrator_ReturnsAdministrator&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=61c8e6b9_002D7ce3_002D47b3_002Db8fe_002D63e14a28a4f2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetByUserIdAsync_NonExistingAdministrator_ReturnsNotFoundResponse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.AdministratorTests.GetByUserIdAsync_NonExistingAdministrator_ReturnsNotFoundResponse&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.SpareRequestServiceTest&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.ApplianceBrandsTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.ReportServiceTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.ApplianceModelTests&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=61c8e6b9_002D7ce3_002D47b3_002Db8fe_002D63e14a28a4f2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetByUserIdAsync_NonExistingAdministrator_ReturnsNotFoundResponse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6bb0a44f_002D4ca5_002D4908_002D9563_002D683f66118c9e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TechniciansServiceTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
@@ -30,7 +25,7 @@
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fa7c27be_002Dbfbb_002D4a06_002Db9ee_002D1577946dd428/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UpdateUserPlanAsync_ValidUpdate_ReturnsSuccessResponse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fa7c27be_002Dbfbb_002D4a06_002Db9ee_002D1577946dd428/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UpdateUserPlanAsync_ValidUpdate_ReturnsSuccessResponse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;ProjectFolder&gt;DF3FCBE3-331A-42E6-8C18-E807062DAC9C/d:Tests&lt;/ProjectFolder&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>
