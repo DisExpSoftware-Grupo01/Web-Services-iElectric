@@ -57,6 +57,7 @@ public class ApplianceModelAppointmentTest
         var dateReserve = "2023-09-25";
         long technicianId = 1;
         long clientId = 2;
+        long clientIdv2 = 1;
 
         var mockAppointmentRepository = new Mock<IAppointmentRepository>();
         var mockUnitOfWork = new Mock<IUnitOfWork>();
@@ -65,7 +66,7 @@ public class ApplianceModelAppointmentTest
         {
             DateReserve = dateReserve,
             TechnicianId = technicianId,
-            ClientId = clientId
+            ClientId = clientIdv2
         };
 
         mockAppointmentRepository.Setup(r =>

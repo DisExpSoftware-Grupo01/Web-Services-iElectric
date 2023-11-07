@@ -17,16 +17,17 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=61c8e6b9_002D7ce3_002D47b3_002Db8fe_002D63e14a28a4f2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetByUserIdAsync_NonExistingAdministrator_ReturnsNotFoundResponse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6bb0a44f_002D4ca5_002D4908_002D9563_002D683f66118c9e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TechniciansServiceTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6bb0a44f_002D4ca5_002D4908_002D9563_002D683f66118c9e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TechniciansServiceTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.TechniciansServiceTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.ClientServiceTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.AdministratorTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.IntegrationTests.IntegrationTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.ApplianceModelAppointmentTest.SaveAsync_DuplicateAppointment_ReturnsErrorResponse&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fa7c27be_002Dbfbb_002D4a06_002Db9ee_002D1577946dd428/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UpdateUserPlanAsync_ValidUpdate_ReturnsSuccessResponse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fa7c27be_002Dbfbb_002D4a06_002Db9ee_002D1577946dd428/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UpdateUserPlanAsync_ValidUpdate_ReturnsSuccessResponse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Or&gt;&#xD;
     &lt;ProjectFolder&gt;DF3FCBE3-331A-42E6-8C18-E807062DAC9C/d:Tests&lt;/ProjectFolder&gt;&#xD;
     &lt;TestAncestor&gt;&#xD;

@@ -31,7 +31,8 @@ public class IntegrationTest
         var clientServiceMock = new Mock<IClientService>();
         var clientService = clientServiceMock.Object;
         
-        var applianceService = new ApplianceService(applianceRepositoryMock.Object, applianceModelRepositoryMock.Object, clientRepositoryMock.Object, unitOfWorkMock.Object);
+        var applianceService = new ApplianceService(applianceRepositoryMock.Object, applianceModelRepositoryMock.Object, 
+            clientRepositoryMock.Object, unitOfWorkMock.Object);
         var applianceModelService = new ApplianceModelService(applianceModelRepositoryMock.Object, applianceBrandRepositoryMock.Object, unitOfWorkMock.Object);
         var appointmentService = new AppointmentService(appointmentRepositoryMock.Object, unitOfWorkMock.Object);
         
