@@ -27,6 +27,11 @@
 &lt;/SessionState&gt;</s:String>
 	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fa7c27be_002Dbfbb_002D4a06_002Db9ee_002D1577946dd428/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UpdateUserPlanAsync_ValidUpdate_ReturnsSuccessResponse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;ProjectFolder&gt;DF3FCBE3-331A-42E6-8C18-E807062DAC9C/d:Tests&lt;/ProjectFolder&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFolder&gt;DF3FCBE3-331A-42E6-8C18-E807062DAC9C/d:Tests&lt;/ProjectFolder&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.Features.AddReportFeature.SuccessfullyAddAReport&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>
