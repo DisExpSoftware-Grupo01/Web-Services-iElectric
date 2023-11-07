@@ -22,6 +22,7 @@
     &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.TechniciansServiceTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.ClientServiceTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.UnitTests.AdministratorTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::DF3FCBE3-331A-42E6-8C18-E807062DAC9C::net7.0::web_services_ielectric.Tests.IntegrationTests.IntegrationTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
