@@ -19,7 +19,7 @@ namespace web_services_ielectric.Tests.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class AddReportFeature : object, Xunit.IClassFixture<AddReportFeature.FixtureData>, System.IDisposable
+    public partial class AddTechnicalReportFeature : object, Xunit.IClassFixture<AddTechnicalReportFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,7 +31,7 @@ namespace web_services_ielectric.Tests.Features
 #line 1 "TechnicalReportService.feature"
 #line hidden
         
-        public AddReportFeature(AddReportFeature.FixtureData fixtureData, web_services_ielectric_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public AddTechnicalReportFeature(AddTechnicalReportFeature.FixtureData fixtureData, web_services_ielectric_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -40,8 +40,8 @@ namespace web_services_ielectric.Tests.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Tests/Features", "Add Report", "\tAs a user\r\n\tI want to add a report\r\n\tSo that I can create new reports for mainte" +
-                    "nance tasks", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Tests/Features", "Add Technical Report", "\tAs a user\r\n\tI want to add a technical report\r\n\tSo that I can create new technica" +
+                    "l reports for maintenance tasks", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -81,17 +81,17 @@ namespace web_services_ielectric.Tests.Features
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Successfully add a report")]
-        [Xunit.TraitAttribute("FeatureTitle", "Add Report")]
-        [Xunit.TraitAttribute("Description", "Successfully add a report")]
+        [Xunit.SkippableFactAttribute(DisplayName="Successfully add a technical report")]
+        [Xunit.TraitAttribute("FeatureTitle", "Add Technical Report")]
+        [Xunit.TraitAttribute("Description", "Successfully add a technical report")]
         [Xunit.TraitAttribute("Category", "mytag")]
-        public virtual void SuccessfullyAddAReport()
+        public virtual void SuccessfullyAddATechnicalReport()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successfully add a report", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 8
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successfully add a technical report", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -111,32 +111,215 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 9
- testRunner.Given("the user wants to add a report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 8
+ testRunner.Given("the user wants to add a technical report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
                             "Observation",
                             "Diagnosis",
                             "Repair Description",
                             "Date",
                             "Image Path"});
-                table5.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "Test Observation",
                             "Test Diagnosis",
                             "Test Repair",
                             "2023-11-07",
                             "/test/image.png"});
-#line 10
- testRunner.When("the user provides the following report information:", ((string)(null)), table5, "When ");
+#line 9
+ testRunner.When("the user provides the following technical report information:", ((string)(null)), table8, "When ");
+#line hidden
+#line 12
+ testRunner.And("the user submits the technical report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 13
- testRunner.And("the user submits the report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("the technical report is added successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 14
- testRunner.Then("the report is added successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 15
  testRunner.And("a successful response is returned", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Attempt to add a technical report with missing information")]
+        [Xunit.TraitAttribute("FeatureTitle", "Add Technical Report")]
+        [Xunit.TraitAttribute("Description", "Attempt to add a technical report with missing information")]
+        [Xunit.TraitAttribute("Category", "mytag")]
+        public virtual void AttemptToAddATechnicalReportWithMissingInformation()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "mytag"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Attempt to add a technical report with missing information", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 17
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 18
+ testRunner.Given("the user wants to add a technical report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Observation",
+                            "Diagnosis",
+                            "Repair Description",
+                            "Date",
+                            "Image Path"});
+                table9.AddRow(new string[] {
+                            "Test Observation",
+                            "",
+                            "Test Repair",
+                            "2023-11-07",
+                            "/test/image.png"});
+#line 19
+ testRunner.When("the user provides incomplete technical report information:", ((string)(null)), table9, "When ");
+#line hidden
+#line 22
+ testRunner.And("the user submits the technical report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 23
+ testRunner.Then("the technical report is not added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 24
+ testRunner.And("an error message is returned indicating missing information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Attempt to add a technical report with an invalid date")]
+        [Xunit.TraitAttribute("FeatureTitle", "Add Technical Report")]
+        [Xunit.TraitAttribute("Description", "Attempt to add a technical report with an invalid date")]
+        [Xunit.TraitAttribute("Category", "mytag")]
+        public virtual void AttemptToAddATechnicalReportWithAnInvalidDate()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "mytag"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Attempt to add a technical report with an invalid date", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 27
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 28
+ testRunner.Given("the user wants to add a technical report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Observation",
+                            "Diagnosis",
+                            "Repair Description",
+                            "Date",
+                            "Image Path"});
+                table10.AddRow(new string[] {
+                            "Test Observation",
+                            "Test Diagnosis",
+                            "Test Repair",
+                            "Invalid Date",
+                            "/test/image.png"});
+#line 29
+ testRunner.When("the user provides technical report information with an invalid date:", ((string)(null)), table10, "When ");
+#line hidden
+#line 32
+ testRunner.And("the user submits the technical report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 33
+ testRunner.Then("the technical report is not added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 34
+ testRunner.And("an error message is returned indicating an invalid date format", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Attempt to add a technical report with a missing image path")]
+        [Xunit.TraitAttribute("FeatureTitle", "Add Technical Report")]
+        [Xunit.TraitAttribute("Description", "Attempt to add a technical report with a missing image path")]
+        [Xunit.TraitAttribute("Category", "mytag")]
+        public virtual void AttemptToAddATechnicalReportWithAMissingImagePath()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "mytag"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Attempt to add a technical report with a missing image path", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 37
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 38
+ testRunner.Given("the user wants to add a technical report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Observation",
+                            "Diagnosis",
+                            "Repair Description",
+                            "Date",
+                            "Image Path"});
+                table11.AddRow(new string[] {
+                            "Test Observation",
+                            "Test Diagnosis",
+                            "Test Repair",
+                            "2023-11-07",
+                            ""});
+#line 39
+ testRunner.When("the user provides technical report information with a missing image path:", ((string)(null)), table11, "When ");
+#line hidden
+#line 42
+ testRunner.And("the user submits the technical report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 43
+ testRunner.Then("the technical report is not added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 44
+ testRunner.And("an error message is returned indicating a missing image path", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -149,12 +332,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             public FixtureData()
             {
-                AddReportFeature.FeatureSetup();
+                AddTechnicalReportFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                AddReportFeature.FeatureTearDown();
+                AddTechnicalReportFeature.FeatureTearDown();
             }
         }
     }
